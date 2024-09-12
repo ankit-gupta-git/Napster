@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Movie Recommendation System</title>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="flex fixed top-0 left-0 right-0 z-10 items-center justify-between p-4 bg-white shadow-md flex-wrap">
+        <div class="text-2xl font-bold text-gray-800">NAPSTER</div>
+        <div class="flex space-x-4 md:space-x-6">
+            <button class="text-gray-600 hover:text-black">Movie</button>
+            <button class="text-gray-600 hover:text-black">Series</button>
+            <button class="text-gray-600 hover:text-black">Originals</button>
+        </div>
+        <div class="flex items-center space-x-2 md:space-x-4 mt-2 md:mt-0">
+            <input type="text" placeholder="Search" class="px-3 py-1 rounded-md border border-gray-300 focus:outline-black">
+            <img src="img4.jpeg" alt="User Avatar" class="w-10 h-10 rounded-full border-2 border-gray-300">
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="p-8 mt-20">
+        <!-- Featured Content -->
+        <div class="flex flex-wrap md:flex-nowrap space-y-6 md:space-y-0 md:space-x-6">
+            <div class="w-full md:w-1/2 bg-[url('img3.jpeg')] bg-cover bg-center h-64 p-8 rounded-lg flex flex-col justify-end">
+                <h2 class="text-3xl font-bold mb-4 text-white">Deadpool & Wolverine</h2>
+                <button class="px-4 py-2 w-1/4 bg-blue-600 text-white rounded-lg transform hover:scale-105">Let's Play Movie</button>
+            </div>
+            <div class="w-full md:w-1/2 bg-[url('img2.jpg')] bg-cover bg-center p-8 rounded-lg flex flex-col justify-end">
+                <h2 class="text-3xl font-bold mb-4 text-white">Fifty Shades of Grey</h2>
+                <button class="px-4 py-2 w-1/4 bg-blue-600 text-white rounded-lg transform hover:scale-105">Let's Play Movie</button>
+            </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="flex flex-wrap space-x-2 md:space-x-4 mt-8 p-5">
+            <button class="px-6 py-2 bg-gray-200 text-black rounded-lg trending transform hover:scale-105 hover:bg-black hover:text-white transition duration-300 ease-in-out">Trending</button>
+            <button class="px-6 py-2 bg-gray-200 rounded-lg action transform hover:scale-105 hover:bg-black hover:text-white transition duration-300 ease-in-out">Action</button>
+            <button class="px-6 py-2 bg-gray-200 rounded-lg romance transform hover:scale-105 hover:bg-black hover:text-white transition duration-300 ease-in-out">Romance</button>
+            <button class="px-6 py-2 bg-gray-200 rounded-lg animation transform hover:scale-105 hover:bg-black hover:text-white transition duration-300 ease-in-out">Animation</button>
+            <button class="px-6 py-2 bg-gray-200 rounded-lg marvel transform hover:scale-105 hover:bg-black hover:text-white transition duration-300 ease-in-out">Marvel</button>
+            <button class="px-6 py-2 bg-gray-200 rounded-lg special transform hover:scale-105 hover:bg-black hover:text-white transition duration-300 ease-in-out">Special</button>
+            <button class="px-6 py-2 bg-gray-200 rounded-lg horror transform hover:scale-105 hover:bg-black hover:text-white transition duration-300 ease-in-out">Horror</button>
+            <button class="px-6 py-2 bg-gray-200 rounded-lg english transform hover:scale-105 hover:bg-black hover:text-white transition duration-300 ease-in-out">English</button>
+            <button class="px-6 py-2 bg-gray-200 rounded-lg netflix transform hover:scale-105 hover:bg-black hover:text-white transition duration-300 ease-in-out">Netflix</button>
+            <button class="px-6 py-2 bg-gray-200 rounded-lg disney transform hover:scale-105 hover:bg-black hover:text-white transition duration-300 ease-in-out">Disney+</button> 
+            <button class="px-6 py-2 bg-gray-200 rounded-lg comedy transform hover:scale-105 hover:bg-black hover:text-white transition duration-300 ease-in-out">Comedy</button> 
+            <button class="px-6 py-2 bg-gray-200 rounded-lg mystery transform hover:scale-105 hover:bg-black hover:text-white transition duration-300 ease-in-out">Mystery</button> 
+        </div>
+
+        <!-- Trending in Animation -->
+        <div class="mt-10">
+            <h3 class="text-2xl font-semibold mb-4">Trending in Animation</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6 movie-section">
+                
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
